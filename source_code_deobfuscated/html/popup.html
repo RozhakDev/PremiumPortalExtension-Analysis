@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0" />
+          <title>Premium Portal</title>
+          <link rel="stylesheet" href="../css/style.css" />
+          <script src="source_code_deobfuscated/jquery-3.7.1.min.js"></script>
+          <script src="source_code_deobfuscated/PremiumPortal_extension.js"></script>
+     </head>
+     <body id="body">
+          <div id="background">
+               <span id="versi"></span>
+               <div class="version-info"></div>
+               <div class="content-extentions">
+                    <div class="content-fixed">
+                         <div class="container-top">
+                              <div id="group-logo-top" class="d-none">
+                                   <img
+                                        id="logoPremiumPutih1"
+                                        class="logoPremiumPutih"
+                                        src="../image/logo-premium-putih.png"
+                                        alt="Premium Portal Logo" />
+                                   <img
+                                        id="logoCategoryUser1"
+                                        src="../image/logo-premium.png"
+                                        alt="User Category" />
+                              </div>
+                              <input
+                                   type="text"
+                                   id="searchInput"
+                                   placeholder="Search app..." />
+                         </div>
+                         <div class="group-btn-2 d-none" id="btn-items">
+                              <div id="btn-back" class="btn-gradient-ungu">
+                                   &lt; KEMBALI
+                              </div>
+                              <div id="btn-logout" class="btn-gradient-merah">
+                                   LOGOUT APP
+                              </div>
+                              <div
+                                   id="btn-report-app"
+                                   class="btn-gradient-abu">
+                                   ! REPORT APP
+                              </div>
+                         </div>
+                         <div
+                              class="group-btn-3  d-none"
+                              id="btn-report-items">
+                              <div
+                                   id="chose-app-report"
+                                   class="btn-gradient-kuning">
+                                   KLIK AKUN YANG INGIN ANDA REPORT!
+                              </div>
+                              <div
+                                   id="btn-back-report"
+                                   class="btn-gradient-ungu">
+                                   BATAL
+                              </div>
+                         </div>
+                         <div id="group-btn-1">
+                              <div id="group-logo-1">
+                                   <img
+                                        id="logoPremiumPutih2"
+                                        class="logoPremiumPutih"
+                                        src="../image/logo-premium-putih.png"
+                                        alt="Premium Portal Logo" />
+                                   <img
+                                        id="logoCategoryUser2"
+                                        src="../image/logo-premium.png"
+                                        alt="User Category" />
+                                   <div
+                                        id="loadingLogoCategoryUser"
+                                        class="d-none">
+                                        Loading...
+                                   </div>
+                              </div>
+                              <a 
+                                   id="btn-alert-use"
+                                   class="btn-gradient-merah-no-border"
+                                   href="https://docs.google.com/document/d/1bRko2NyU4RH5OLTvqUC0NKwgzv6A3lsXoYqK1ki7ECc/edit?tab=t.0"
+                                   target="_blank"
+                                   rel="noopener">
+                                   <div>
+                                        CARA PENGGUNAAN <span>(WAJIB DIBACA)</span>
+                                   </div>
+                              </a>
+                         </div>
+                         <div id="group-contact">
+                              <button id="btn-contact-1" class="btn-contact">
+                                   <img
+                                        src="../image/logo-contact-us.png"
+                                        class="image-contact-btn"
+                                        alt="logo-contact-us" />
+                                   <a id="btn-contact-1-a" href="https://t.me/premiumportalofficial"
+                                        target="_blank" class="marquee-link"
+                                        rel="noopener">
+                                        <p>Hubungi Kami</p>
+                                   </a>
+                              </button>
+                              <button id="btn-contact-2" class="btn-contact">
+                                   <img
+                                        src="../image/logo-telegram.png"
+                                        class="image-contact-btn"
+                                        alt="logo-contact-telegram" />
+                                   <a id="btn-contact-2-a" href="https://t.me/premiumportal_id"
+                                        target="_blank" class="marquee-link"
+                                        rel="noopener">
+                                        <p>Channel Telegram</p>
+                                   </a>
+                              </button>
+                              <button id="btn-contact-3" class="btn-contact">
+                                   <img
+                                   src="../image/logo-information.png"
+                                   class="image-contact-btn"
+                                   alt="logo-information" />
+                                   <a id="btn-contact-3-a" href="https:premiumportal.id/"
+                                        target="_blank" class="marquee-link"
+                                        rel="noopener">
+                                        <p>Informasi & FAQ</p>
+                                   </a>
+                              </button>
+                         </div>
+                         <div id="category" class="d-none">
+                              <button id="all-category" data-category="all">
+                                   All Category
+                              </button>
+                              <button
+                                   id="streaming-category"
+                                   data-category="streaming">
+                                   Streaming
+                              </button>
+                              <button
+                                   id="design-category"
+                                   data-category="design">
+                                   Design & Tools
+                              </button>
+                              <button
+                                   id="education-category"
+                                   data-category="education">
+                                   Education
+                              </button>
+                              <button id="ai-category" data-category="ai">
+                                   Artificial Intelligence
+                              </button>
+                         </div>
+                    </div>
+                    <div id="loading" class="d-none"><p id="text-loading">Loading...</p></div>
+                    <div id="loaded-not-update" class="d-none">
+                         <div id="btn-alert-update">
+                              <img src="../image/warning.webp" alt>
+                              <h1>UPDATE EKSTENSI</h1>
+                              <p>SILAKAN UNDUH EKSTENSI TERBARU UNTUK
+                                   MELANJUTKAN AKSES PREMIUM PORTAL!</p>
+                         </div>
+                         <a href="https://premiumportal.id/extension/"
+                              target="_blank" class="marquee-link"
+                              rel="noopener">
+                              <button id="btn-confirm-update">
+                                   KLIK DI SINI UNTUK UPDATE EKSTENSI
+                              </button>
+                         </a>
+                    </div>
+                    <div id="loaded">
+                         <div id="item" class="fadeIn"></div>
+                         <div id="item-has-limit" class="fadeIn"></div>
+                    </div>
+                    <div id="add-content"></div>
+                    <div id="note" class="d-none fadeIn">
+                         <h2>PERHATIAN !</h2>
+                         <p id="content-note"></p>
+                    </div>
+               </div>
+               <div class="marquee-container">
+                    <img
+                         src="../image/icon-text.svg"
+                         alt
+                         class="marquee-image" />
+                    <a
+                         href="https://premiumportal.id"
+                         target="_blank"
+                         class="marquee-link"
+                         rel="noopener">
+                         <div class="marquee-content">
+                              <span id="headline">silakan login di website
+                                   premiumportal
+                                   terlebih dahulu untuk mengakses content
+                                   extentions</span>
+                         </div>
+                    </a>
+               </div>
+          </div>
+          <div id="loading-main">
+               <div id="loading-wrap">
+                    <img src="../image/logo-premium-putih.png" alt="Logo">
+                    <div id="spinner"></div>
+               </div>
+          </div>
+     </body>
+</html>
